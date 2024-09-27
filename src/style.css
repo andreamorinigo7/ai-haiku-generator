@@ -9,34 +9,55 @@ h1 {
   padding: 30px;
   font-family: sans-serif;
 }
+
+main {
+  transform: translateY(2in);
+}
+
 form {
   display: flex;
 }
 a {
-  color: #3c3d37;
+  color: #ecdfcc;
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
   color: #ecdfcc;
+  opacity: 0.4;
 }
 footer {
-  color: #3c3d37;
+  color: #ecdfcc;
+  opacity: 0.4;
   text-align: center;
   padding: 20px;
-  transform: translateY(2in);
+  transform: translateY(4in);
   font-family: sans-serif;
 }
 
 .form-container {
-  padding: 150px;
-  border-radius: 10px;
+  padding: 130px;
   background-color: #3c3d37;
   transform: translateY(1.9in);
 }
 
 .hidden {
   display: none;
+}
+
+.poem {
+  font-size: 16px;
+  color: #ecdfcc;
+  padding-left: 10px;
+  line-height: 2;
+  border-left: 3px solid #697565;
+  margin: auto;
+  max-width: 600px;
+}
+.poem strong {
+  color: #697565;
+  margin: 15px;
+  line-height: 3;
 }
 
 .hint {
@@ -64,20 +85,6 @@ footer {
   margin-left: 10px;
   color: #ecdfcc;
   font-family: sans-serif;
-}
-.poem {
-  font-size: 16px;
-  color: #ecdfcc;
-  padding: 20px;
-  line-height: 2;
-  border-left: 3px solid #697565;
-  margin: 80px auto;
-  max-width: 600px;
-}
-.poem strong {
-  color: #697565;
-  margin: 15px;
-  line-height: 3;
 }
 
 .generating {
