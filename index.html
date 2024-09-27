@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>🍥 Haiku Generator</title>
   </head>
   <body>
@@ -11,11 +12,8 @@
       <h1>AI Haiku Generator</h1>
     </header>
     <main>
-      <div class="poem">
-        poem will go here <br />
-        and more here
-      </div>
-      <form>
+      <div class="poem" id="poem"></div>
+      <form id="poem-generator-form">
         <input
           class="input-search"
           type="text"
@@ -33,5 +31,6 @@
       <a href="https://github.com/andreamorinigo7"> Github </a> and hosted on
       <a href="https://ai-haiku-generator-andi.netlify.app"> Netlify</a>
     </footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
