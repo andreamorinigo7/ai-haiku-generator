@@ -2,7 +2,7 @@ function displayPoem(response) {
   new Typewriter("#poem", {
     strings: response.data.answer,
     autoStart: true,
-    delay: 1,
+    delay: 3,
     cursor: null,
   });
 }
@@ -16,6 +16,10 @@ function poemGenerator(event) {
     "You are an expert romantic Haiku writer. Your mission is to generate a haiku poem in basic HTML and separate each line with <br />. Make sure to follow user instructions. Please do not title the poem or add any other marks like '' or words like 'html'. Sign the poem with 'Made with ❤️ by AI' inside a <strong> element only at the end of the poem.";
   let prompt = `User instructions: Generate a haiku poem about${inputInstruction.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="generating">⏳ Generating a haiku about ${inputInstruction.value}</div>`;
 
   console.log("Generating poem");
   console.log(`Prompt: ${prompt}`);

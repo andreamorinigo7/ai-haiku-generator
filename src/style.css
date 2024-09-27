@@ -10,11 +10,7 @@ h1 {
   font-family: sans-serif;
 }
 form {
-  display: block;
-  padding: 150px;
-  border-radius: 10px;
-  background-color: #3c3d37;
-  transform: translateY(1.9in);
+  display: flex;
 }
 a {
   color: #3c3d37;
@@ -31,6 +27,26 @@ footer {
   transform: translateY(2in);
   font-family: sans-serif;
 }
+
+.form-container {
+  padding: 150px;
+  border-radius: 10px;
+  background-color: #3c3d37;
+  transform: translateY(1.9in);
+}
+
+.hidden {
+  display: none;
+}
+
+.hint {
+  color: #ecdfcc;
+  opacity: 0.4;
+  line-height: 1.5;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
 .input-search {
   padding: 20px;
   border-radius: 20px;
@@ -42,6 +58,7 @@ footer {
   width: 100px;
   padding: 15px 25px;
   border-radius: 20px;
+  line-height: 1.5;
   background-color: #697565;
   border: 1px solid #697565;
   margin-left: 10px;
@@ -54,11 +71,27 @@ footer {
   padding: 20px;
   line-height: 2;
   border-left: 3px solid #697565;
-  margin: 120px auto;
+  margin: 80px auto;
   max-width: 600px;
 }
 .poem strong {
   color: #697565;
   margin: 15px;
   line-height: 3;
+}
+
+.generating {
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
