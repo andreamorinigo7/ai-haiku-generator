@@ -7,6 +7,7 @@ h1 {
   text-align: center;
   color: #ecdfcc;
   padding: 30px;
+  font-family: sans-serif;
 }
 form {
   display: block;
@@ -28,6 +29,7 @@ footer {
   text-align: center;
   padding: 20px;
   transform: translateY(2in);
+  font-family: sans-serif;
 }
 .input-search {
   padding: 20px;
@@ -44,6 +46,7 @@ footer {
   border: 1px solid #697565;
   margin-left: 10px;
   color: #ecdfcc;
+  font-family: sans-serif;
 }
 .poem {
   font-size: 16px;
@@ -53,4 +56,9 @@ footer {
   border-left: 3px solid #697565;
   margin: 120px auto;
   max-width: 600px;
+}
+.poem strong {
+  color: #697565;
+  margin: 15px;
+  line-height: 3;
 }
