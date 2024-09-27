@@ -1,0 +1,56 @@
+body {
+  background-color: #1e201e;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #ecdfcc;
+  padding: 30px;
+}
+form {
+  display: block;
+  padding: 150px;
+  border-radius: 10px;
+  background-color: #3c3d37;
+  transform: translateY(1.9in);
+}
+a {
+  color: #3c3d37;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #ecdfcc;
+}
+footer {
+  color: #3c3d37;
+  text-align: center;
+  padding: 20px;
+  transform: translateY(2in);
+}
+.input-search {
+  padding: 20px;
+  border-radius: 20px;
+  width: 80%;
+  padding: 15px 25px;
+  border: none;
+}
+.submit-button {
+  width: 100px;
+  padding: 15px 25px;
+  border-radius: 20px;
+  background-color: #697565;
+  border: 1px solid #697565;
+  margin-left: 10px;
+  color: #ecdfcc;
+}
+.poem {
+  font-size: 16px;
+  color: #ecdfcc;
+  padding: 20px;
+  line-height: 2;
+  border-left: 3px solid #697565;
+  margin: 120px auto;
+  max-width: 600px;
+}

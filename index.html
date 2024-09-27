@@ -3,15 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>🍥 Haiku Generator</title>
   </head>
   <body>
     <header>
-      <h1>Welcome to AI Haiku Generator</h1>
+      <h1>AI Haiku Generator</h1>
     </header>
     <main>
+      <div class="poem">
+        poem will go here <br />
+        and more here
+      </div>
       <form>
         <input
+          class="input-search"
           type="text"
           placeholder="Enter a word ..."
           id=""
@@ -19,12 +25,8 @@
           requried
           autocomplete="off"
         />
-        <input type="submit" value="Submit" />
+        <input type="submit" class="submit-button" value="Submit" />
       </form>
-      <div>
-        poem will go here <br />
-        and more here
-      </div>
     </main>
     <footer>
       Coded by <a href="">Andrea Morinigo </a> open-sourced on
