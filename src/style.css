@@ -31,14 +31,14 @@ footer {
   opacity: 0.4;
   text-align: center;
   padding: 20px;
-  transform: translateY(4in);
+  transform: translateY(3in);
   font-family: sans-serif;
 }
 
 .form-container {
-  padding: 130px;
+  padding: 100px;
   background-color: #3c3d37;
-  transform: translateY(1.9in);
+  transform: translateY(1in);
 }
 
 .hidden {
